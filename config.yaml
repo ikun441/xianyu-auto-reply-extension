@@ -1,0 +1,8 @@
+server:
+  host: localhost
+  port: 9191
+auth: jwt_token
+cloudreve:
+  name: your_cloudreve_name
+  password: your_cloudreve_password
+  url: https://your_cloudreve_url
