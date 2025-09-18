@@ -16,4 +16,7 @@ payload = json.dumps({
    "expire": 86400 , #选填,单位为秒,填写为0则代表不限制过期时间
    "is_private": True, # 选填，是否随机生成密码
 })
+
 ```
+### xy中你需要设置的参数如下：
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7641758b-0dbf-4e2d-bd22-8547e0de5fab" />
