@@ -1,7 +1,7 @@
 **生如夏花，死如秋叶。 ---泰戈尔**
 # xianyu-auto-reply扩展
 ## 项目介绍 
-- 在使用xianyu-auto-reply（简称：“xy”）的过程中，我同时部署了cloudreve的服务，但也察觉到了xianyu-auto-reply对于api仅支持静态的请求，所以本项目将会为它添加额外的能力，通过本项目，你将能通过静态的api请求，获取临时性的可以被任意指定参数的分享链接。
+- 在使用;[xianyu-auto-reply](ttps://github.com/zhinianboke/xianyu-auto-reply)（简称：“xy”）的过程中，我同时部署了cloudreve的服务，但也察觉到了xianyu-auto-reply对于api仅支持静态的请求，所以本项目将会为它添加额外的能力，通过本项目，你将能通过静态的api请求，获取临时性的可以被任意指定参数的分享链接。
 - 本项目为xy和cloudreve之间提供了一个第三方的本地中转服务器，所以不会产生任何隐私问题（除非您尝试将其暴露在公网中）
 - 我们建议您关闭cloudreve的验证码和其他如2FA等的验证方式，便于登陆，且开放直链获取和关闭用户注册功能。
 
@@ -87,28 +87,7 @@ docker run -d -p 9191:9191 --name xy-extension xy-extension
   ```
 
 ## 测试脚本使用
-项目包含了一个`test.py`脚本，用于测试获取分享链接的功能。
-
-### 运行测试脚本
-```bash
-# 在服务运行的情况下，执行测试脚本
-python test.py
-```
-
-### 配置测试参数
-在运行测试之前，您需要根据实际情况修改`test.py`文件中的测试参数：
-```python
-# 请根据实际情况修改以下参数
-test_file_uri = 'cloudreve://my/example.txt'  # 测试文件URI
-test_download_limit = 1  # 下载限制次数
-test_expire_seconds = 3600  # 过期时间（1小时）
-test_is_private = True  # 是否私有
-```
-
-### 测试脚本功能
-1. 首先测试服务是否正常运行
-2. 如果服务正常，发送请求获取指定文件的分享链接
-3. 输出详细的测试结果，包括分享链接、访问密码、下载限制和过期时间等信息
+项目包含了一个api.md文档，你可以在[此处](api.md)查看需要填写的headers和payload规范。
 
 ## xianyu-auto-reply API参数设置
 在xianyu-auto-reply中配置API参数：
@@ -123,3 +102,4 @@ test_is_private = True  # 是否私有
 2. 本服务默认仅监听本地地址，如需外部访问，请修改config.yaml中的host为0.0.0.0
 3. 在生产环境中，请考虑使用反向代理如Nginx来提供更好的安全性和性能
 4. 如果遇到登录问题，请检查Cloudreve服务是否正常运行，以及账号信息是否正确
+
