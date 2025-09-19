@@ -9,7 +9,7 @@
 ### 拉取项目
 ```bash
 # 克隆项目（请替换为实际的仓库地址）
-git clone https://github.com/ikun441y/xianyu-auto-reply-extension.git
+git clone https://github.com/ikun441/xianyu-auto-reply-extension.git
 cd xianyu-auto-reply-extension
 ```
 
@@ -208,6 +208,7 @@ docker run -d -p 9191:9191 --name xy-extension xy-extension
 4. 如果遇到登录问题，请检查Cloudreve服务是否正常运行，以及账号信息是否正确
 5. 如果遇到问题，欢迎提issues，你也可以选择加入社群。
    ![hajimi](https://github.com/user-attachments/assets/80407515-a466-4820-b26d-6da74375dbd0)
+
 
 
 
