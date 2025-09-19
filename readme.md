@@ -86,7 +86,7 @@ docker run -d -p 9191:9191 --name xy-extension xy-extension
   }
   ```
 
-## 测试脚本使用
+## API文档
 项目包含了一个api.md文档，你可以在[此处](api.md)查看需要填写的headers和payload规范。
 
 ## xianyu-auto-reply API参数设置
@@ -208,6 +208,7 @@ docker run -d -p 9191:9191 --name xy-extension xy-extension
 4. 如果遇到登录问题，请检查Cloudreve服务是否正常运行，以及账号信息是否正确
 5. 如果遇到问题，欢迎提issues，你也可以选择加入社群。
    ![hajimi](https://github.com/user-attachments/assets/80407515-a466-4820-b26d-6da74375dbd0)
+
 
 
 
