@@ -14,6 +14,12 @@ class Config:
         self.config[key] = value
         with open(self.config_path,'w',encoding='utf-8') as f:  # 使用保存的配置文件路径
             yaml.dump(self.config,f,encoding='utf-8',allow_unicode=True)
+    def save(self):
+        with open(self.config_path,'w',encoding='utf-8') as f:
+            yaml.dump(self.config,f,encoding='utf-8',allow_unicode=True)
+    def set(self,key,value):
+        self.config[key] = value
+        self.save()
 
 class User:
     def __init__(self,name,password,url):
@@ -93,3 +99,4 @@ class NetManager:
         data = self.create_url()
         url = json.loads(data).get('data')
         return url
+
