@@ -71,7 +71,7 @@ async def startup_event():
                 log.info("登录成功，已获取认证token和设置请求头")
                 log.info(f'获取到的headers为:{headers},正在准备写入config.yaml')
                 # 写入config.yaml
-                config.set("cloudreve", "headers", headers)
+                config.set("auth", headers)
                 config.save()
                 log.info(f'headers已成功写入config.yaml')
             else:
@@ -194,4 +194,5 @@ if __name__ == "__main__":
     
     log.info(f"启动服务，监听地址: http://{host}:{port}")
     uvicorn.run(app, host=host, port=port)
+
 
