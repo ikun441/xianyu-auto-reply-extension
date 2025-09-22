@@ -1,0 +1,10 @@
+auth:
+  Authorization: tk
+  Content-Type: application/json
+cloudreve:
+  name: youraddress@qq.com
+  password: danm
+  url: danm
+server:
+  host: localhost
+  port: 9191
