@@ -103,7 +103,8 @@ docker run -d -p 9191:9191 --name xy-extension xy-extension
 3. 在生产环境中，请考虑使用反向代理如Nginx来提供更好的安全性和性能
 4. 如果遇到登录问题，请检查Cloudreve服务是否正常运行，以及账号信息是否正确
 5. 如果遇到问题，欢迎提issues，你也可以选择加入社群。
-![hajimi.jpg](https://raw.gitcode.com/user-images/assets/7595768/95133f17-f1f2-465c-860f-bf90d51224aa/hajimi.jpg 'hajimi.jpg')
+<img width="1284" height="2283" alt="微信图片_20261030190348_75_72" src="https://github.com/user-attachments/assets/c2d5bb4e-01ab-4083-95c9-b0ab1462ade6" />
+
 
 
 
